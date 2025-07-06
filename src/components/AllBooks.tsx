@@ -10,8 +10,8 @@ const AllBooks = () => {
 
     return (
         <>
-            <p>This is AllBooks</p>
-            <div className="grid grid-cols-5">
+            <p className="text-4xl font-bold text-center pb-4">All Books</p>
+            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-3 mb-10">
                 {
                     !isLoading &&
                     data.data.map((book: IBook) => <Book key={book._id} book={book}></Book>)

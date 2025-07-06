@@ -18,3 +18,12 @@ export type addBookType = {
     copies: number,
     available: boolean
 }
+
+
+export type borrowType = {
+    book: {
+        title: string,
+        isbn: string
+    }
+    totalQuantity: number,
+}

@@ -32,39 +32,39 @@ const EditForm = () => {
         }
 
     return (
-        <div>
-            <p>This is Edit Books</p>
+        <div className="flex flex-col items-center border-blue-900 border-[2px] rounded-2xl p-5 gap-2 mb-10">
+            <p className="text-4xl font-bold text-center pb-4">Edit Book Here</p>
             {
                 !isLoading &&
                 <form onSubmit={handleSubmit} className="flex flex-col">
                     <label>Enter Book title:
-                        <input name="title" type="text" defaultValue={`${data.data.title}`} className="flex flex-col border p-2 rounded"/>
+                        <input name="title" type="text" defaultValue={data.data.title} className="flex flex-col border p-2 rounded"/>
                     </label>
 
                     <label>Enter Author:
-                        <input name="author" type="text" defaultValue={`${data.data.author}`} className="flex flex-col border p-2 rounded"/>
+                        <input name="author" type="text" defaultValue={data.data.author} className="flex flex-col border p-2 rounded"/>
                     </label>
                     
                     <label>Enter Genre:
-                        <input name="genre" type="text" defaultValue={`${data.data.genre}`} className="flex flex-col border p-2 rounded"/>
+                        <input name="genre" type="text" defaultValue={data.data.genre} className="flex flex-col border p-2 rounded"/>
                     </label>
 
                     <label>Enter ISBN:
-                        <input name="isbn" type="text" defaultValue={`${data.data.isbn}`} className="flex flex-col border p-2 rounded"/>
+                        <input name="isbn" type="text" defaultValue={data.data.isbn} className="flex flex-col border p-2 rounded"/>
                     </label>
 
                     <label>Enter Description:
-                        <input name="description" type="text" defaultValue={`${data.data.description}`} className="flex flex-col border p-2 rounded"/>
+                        <input name="description" type="text" defaultValue={data.data.description} className="flex flex-col border p-2 rounded"/>
                     </label>
 
                     <label>Enter Copies:
-                        <input name="copies" type="number" defaultValue={`${data.data.copies}`} className="flex flex-col border p-2 rounded"/>
+                        <input name="copies" type="number" defaultValue= {data.data.copies} className="flex flex-col border p-2 rounded"/>
                     </label>
                     
                     <label>Available:
                         <input name="available" type="checkbox" defaultChecked className="flex flex-col border p-2 rounded"/>
                     </label>
-                    <button type="submit">Update Book</button>
+                    <button className="bg-blue-500 text-white rounded-xl font-bold mt-2 px-2" type="submit">Update Book</button>
                 </form>
             }
         </div>

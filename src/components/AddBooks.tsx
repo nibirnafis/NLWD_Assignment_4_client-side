@@ -32,8 +32,8 @@ const AddBooks = () => {
 
 
     return (
-        <div>
-            <p>This is AddBooks</p>
+        <div className="flex flex-col items-center border-blue-900 border-[2px] rounded-2xl p-5 gap-2 mb-10">
+            <p className="text-4xl font-bold text-center pb-4">Add New Book Here</p>
             <form onSubmit={handleSubmit} className="flex flex-col">
                 <label>Enter Book title:
                     <input name="title" type="text" className="flex flex-col border p-2 rounded"/>
@@ -62,7 +62,7 @@ const AddBooks = () => {
                 <label>Available:
                     <input name="available" type="checkbox" defaultChecked className="flex flex-col border p-2 rounded"/>
                 </label>
-                <button type="submit">Add Book</button>
+                <button className="bg-blue-500 text-white rounded-xl font-bold mt-2 px-2" type="submit">Add Book</button>
             </form>
         </div>
     );
