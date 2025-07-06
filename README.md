@@ -2,6 +2,10 @@
 
 This is the frontend of the **Book Shop** mini project. It is a full-stack application that displays a list of books fetched from a backend API, allowing users to view, add, edit, delete, and borrow books.
 
+## 🔗 Live Demo
+
+https://nlwd-assignment-4-client-side.vercel.app/
+
 ## 🚀 Technologies Used
 
 - **React**
